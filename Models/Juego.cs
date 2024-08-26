@@ -4,7 +4,7 @@ public class Juego
     private static int puntajeActual {get;set;}
     private static int cantidadPreguntasCorrectas{get;set;}
     private static List<Pregunta> preguntas = new List<Pregunta>();
-    private static List<Respuesta> preguntas2 = new List<Respuesta>();
+    private static List<Respuesta> Respuesta = new List<Respuesta>();
 
     public void InicializarJuego()
     {
@@ -13,17 +13,49 @@ public class Juego
         cantidadPreguntasCorrectas = 0;
     }
 
-    public List<Categoria> ObtenerCategorias()
+    private List<Categoria> ObtenerCategorias()
     {
-       List<Categoria> categoria = new List<Categoria>();
-       categoria = BD.ObtenerCategorias();
-        return categoria;
+        return BD.ObtenerCategorias();
     }
 
-     public List<Dificultad> ObtenerDificultades()
+    private List<Dificultad> ObtenerDificultades()
     {
-        List<Dificultad> dificultades = new List<Dificultad>();
-        dificultades = BD.ObtenerCategorias();
-        return  dificultades;
+        return  BD.ObtenerDificultad();
     }
+
+    public void CargarPartida(string username, int dificultad, int categoria)
+    {
+        preguntas = BD.ObtenerPreguntas(dificultad, categoria);
+        Respuesta = BD.ObtenerRespuestas(preguntas);
+    }
+
+    public Pregunta ObtenerProximaPregunta()
+    {
+        Random rnd = new Random();
+        int posAzar = rnd.Next(preguntas.Count() + 1);  
+        Pregunta PreguntaAzar = preguntas[posAzar];
+        return PreguntaAzar;
+    }
+
+    public List<Respuesta> ObtenerProximasRespuestas(int idPregunta)
+    {
+        List<Respuesta> RespuestasPosibles = new List<Respuesta>();  
+        RespuestasPosibles.Add(Respuesta[idPregunta]);
+        return RespuestasPosibles;
+    }
+
+    public bool VerificarRespuesta(int idPregunta, int idRespuesta)
+    { //si la pregunta es igual y si tiene un true, buscar en la lista
+        if(idRespuesta == )
+        {
+            puntajeActual += 5;
+            cantidadPreguntasCorrectas++;
+
+            return true;
+        }else
+        {
+            return false;
+        }
+    }
+
 }
