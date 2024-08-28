@@ -47,6 +47,7 @@ public class BD
             string sql = "SELECT * FROM Respuestas WHERE a.IdPregunta = IdRespuesta";
             //usar addRange
             ListaRespuesta = db.Query<Respuesta>(sql).ToList();
+            ListaRespuesta.AddRange(a);
             }
         }
         return ListaRespuesta;

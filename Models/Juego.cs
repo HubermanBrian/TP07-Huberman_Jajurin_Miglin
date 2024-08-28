@@ -3,8 +3,8 @@ public class Juego
     private static string username {get;set;}
     private static int puntajeActual {get;set;}
     private static int cantidadPreguntasCorrectas{get;set;}
-    private static List<Pregunta> preguntas = new List<Pregunta>();
-    private static List<Respuesta> Respuesta = new List<Respuesta>();
+    public static List<Pregunta> preguntas = new List<Pregunta>();
+    public static List<Respuesta> Respuesta = new List<Respuesta>();
 
     public void InicializarJuego()
     {
@@ -26,14 +26,27 @@ public class Juego
     public void CargarPartida(string username, int dificultad, int categoria)
     {
         preguntas = BD.ObtenerPreguntas(dificultad, categoria);
-        Respuesta = BD.ObtenerRespuestas(preguntas);
+        if (preguntas.Count > 0)
+        {
+            Respuesta = BD.ObtenerRespuestas(preguntas);
+        }
+        
     }
 
     public Pregunta ObtenerProximaPregunta()
     {
+        Pregunta PreguntaAzar;
         Random rnd = new Random();
-        int posAzar = rnd.Next(preguntas.Count() + 1);  
-        Pregunta PreguntaAzar = preguntas[posAzar];
+        if(preguntas.Count > 1)
+        {
+            int posAzar = rnd.Next(preguntas.Count());  
+            PreguntaAzar = preguntas[posAzar];
+        }
+        else
+        {
+            PreguntaAzar = null;
+        }
+
         return PreguntaAzar;
     }
 
@@ -45,12 +58,14 @@ public class Juego
     }
 
     public bool VerificarRespuesta(int idPregunta, int idRespuesta)
-    { //si la pregunta es igual y si tiene un true, buscar en la lista
-        if(idRespuesta == )
+    {
+        if(preguntas[idPregunta].IdPregunta == Respuesta[idPregunta].IdPregunta)
         {
-            puntajeActual += 5;
+            //switch (Dificultad.IdDificultad)
+            //puntajeActual += 5;
             cantidadPreguntasCorrectas++;
-
+            preguntas.RemoveAt(idPregunta);
+            preguntas.RemoveAt(idRespuesta);
             return true;
         }else
         {
