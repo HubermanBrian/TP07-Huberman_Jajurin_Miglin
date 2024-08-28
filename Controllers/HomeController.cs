@@ -41,7 +41,7 @@ public class HomeController : Controller
     public IActionResult Comenzar(string username, int dificultad, int categoria)
     {
         Juego.CargarPartida(username, dificultad, categoria);
-        if (preguntas.Count > 0)
+        if (Juego.preguntas.Count > 0)
         {
             return RedirectToAction ("Jugar");
         }else
