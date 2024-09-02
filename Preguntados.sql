@@ -6,6 +6,7 @@ CREATE TABLE Categorias(
     IdCategoria INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
     Nombre VARCHAR(200) NOT NULL,
     Foto TEXT NOT NULL
+    Color VARCHAR(200) NOT NULL,
 );
 
 CREATE TABLE Dificultades(
