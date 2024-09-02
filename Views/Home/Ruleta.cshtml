@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/Winwheel.min.js"></script>
+    <title>Ruleta con Librerias</title>
+  </head>
+  <body>
+    <input type="button" value="Girar" onclick="miRuleta.startAnimation();" />
+    <br /><br />
+    <canvas id="canvas" height="400" width="400"></canvas>
+    <script src="js/functions.js"></script>
+  </body>
+</html>
+
+<script>    
+    var miRuleta = new Winwheel({
+  numSegments: 15,
+  outerRadius: 170,
+  segments: [
+    foreach(Categoria categoria in ViewBag.Categoria)
+    {
+        { fillStyle: "categoria[categoria.IdCategoria].Color", text: "categoria[categoria.IdCategoria].Nombre" }
+    }
+  ],
+  animation: {
+    type: "spinToStop",
+    duration: 5,
+    callbackFinished: "mensaje()",
+    callbackAfter: "dibujarIndicador()"
+  }
+});
+
+dibujarIndicador();
+
+function mensaje() {
+  var SegmentoSeleccionado = miRuleta.getIndicatedSegment();
+  alert("Elemento seleccionado: " + SegmentoSeleccionado.text);
+  miRuleta.stopAnimation(false);
+  miRuleta.rotationAngle = 0;
+  miRuleta.draw();
+  dibujarIndicador();
+}
+
+function dibujarIndicador() {
+  var ctx = miRuleta.ctx;
+  ctx.strokeStyle = "navy";
+  ctx.fillStyle = "black";
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(170, 10);
+  ctx.lineTo(230, 10);
+  ctx.lineTo(200, 70);
+  ctx.lineTo(170, 10);
+  ctx.stroke();
+  ctx.fill();
+}
+</script>

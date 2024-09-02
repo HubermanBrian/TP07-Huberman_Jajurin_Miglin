@@ -21,7 +21,6 @@ public class HomeController : Controller
     public IActionResult ConfigurarJuego()
     {
         Juego.InicializarJuego();
-        ViewBag.Categoria = Juego.ObtenerCategorias();
         ViewBag.Dificultad = Juego.ObtenerDificultades();
         return View();
     }
@@ -42,9 +41,18 @@ public class HomeController : Controller
 
     }
 
-    public IActionResult Comenzar(string username, string foto, int dificultad, int categoria)
+    public IActionResult InicioSesion(string username, string foto, int dificultad)
+    {
+        Juego.CargarUsuario(username,foto);
+        ViewBag.Username = Juego.RetornoUsername();
+        ViewBag.Foto = Juego.RetornoFoto();
+        Juego.CargarDificultad(dificultad);
+        ViewBag.Categoria = Juego.ObtenerCategorias();
+        return View ("Ruleta");
+    }
+    public IActionResult Comenzar(int categoria)
     {   
-        Juego.CargarPartida(username, dificultad, categoria);
+        Juego.CargarPartida(categoria);
         if (Juego.preguntas.Count > 0)
         {
             return RedirectToAction ("Jugar");

@@ -2,6 +2,7 @@ public class Juego
 {
     private static string username {get;set;}
     private static string foto {get;set;}
+    private static int dificultad {get;set;}
     private static int puntajeActual {get;set;}
     private static int cantidadPreguntasCorrectas{get;set;}
     public static List<Pregunta> preguntas = new List<Pregunta>();
@@ -29,11 +30,18 @@ public class Juego
         return  BD.ObtenerDificultad();
     }
 
-    public void CargarPartida(string Username, string Foto, int dificultad, int categoria)
+    public void CargarUsuario(string Username, string Foto)
     {
-        preguntas = BD.ObtenerPreguntas(dificultad, categoria);
         username = Username;
         foto = Foto;
+    }
+    public void CargarDificultad(int Dificultad)
+    {
+        dificultad = Dificultad;
+    }
+    public void CargarPartida(int categoria)
+    {
+        preguntas = BD.ObtenerPreguntas(dificultad, categoria);
         if (preguntas.Count > 0)
         {
             Respuesta = BD.ObtenerRespuestas(preguntas);
@@ -78,7 +86,9 @@ public class Juego
 
     public bool VerificarRespuesta(int idPregunta, int idRespuesta)
     {
-        if(preguntas[idPregunta].IdPregunta == Respuesta[idPregunta].IdPregunta && Respuesta[idRespuesta].Correcta == true)
+        int posPregunta = preguntas.IndexOf(idPregunta);
+        int posRespuesta = Respuesta.IndexOf(idRespuesta);
+        if(preguntas[posPregunta].IdPregunta == Respuesta[posPregunta].IdPregunta && Respuesta[posRespuesta].Correcta == true)
         {
             switch (Dificultad.IdDificultad)
             {
@@ -104,7 +114,8 @@ public class Juego
     {
         if(!VerificarRespuesta(idPregunta, idRespuesta))
         {
-            string correcta = Respuesta[idPregunta].Contenido;
+            int posPregunta = preguntas.IndexOf(idPregunta);
+            string correcta = Respuesta[posPregunta].Contenido;
         }
         return correcta;
     }
