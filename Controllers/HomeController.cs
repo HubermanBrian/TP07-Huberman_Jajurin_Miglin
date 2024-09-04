@@ -76,6 +76,7 @@ public class HomeController : Controller
             ViewBag.Respuesta = "Respuesta incorrecta";
             ViewBag.RespuestaCorrecta = Juego.RespuestaCorrecta (idPregunta, idRespuesta);
         }
+        Juego.EliminarId(idPregunta,idRespuesta);
         return View("Respuesta");
     }
 }

@@ -40,13 +40,13 @@ public class BD
 
     public static List<Respuesta> ObtenerRespuestas(List<Pregunta>preguntas)
     {
-         List<Respuesta> ListaRespuesta = null;
-         using (SqlConnection db = new SqlConnection(_connectionString))
+        List<Respuesta> ListaRespuesta = null;
+        using (SqlConnection db = new SqlConnection(_connectionString))
         {
+            string sql = "SELECT * FROM Respuestas";
             foreach (Pregunta a in preguntas){
-            string sql = "SELECT * FROM Respuestas WHERE a.IdPregunta = IdRespuesta";
-            ListaRespuesta = db.Query<Respuesta>(sql).ToList();
-            ListaRespuesta.AddRange(a);
+                List<Respuesta>ListaRespuestaPorPregunta = db.Query<Respuesta>(sql, new {@id = a.IdPregunta}).ToList();
+                ListaRespuesta.AddRange(ListaRespuestaPorPregunta);
             }
         }
         return ListaRespuesta;

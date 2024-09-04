@@ -1,4 +1,4 @@
-public class Juego
+public static class Juego
 {
     private static string username {get;set;}
     private static string foto {get;set;}
@@ -8,63 +8,63 @@ public class Juego
     public static List<Pregunta> preguntas = new List<Pregunta>();
     public static List<Respuesta> Respuesta = new List<Respuesta>();
 
-    public void InicializarJuego()
+    public static void InicializarJuego()
     {
         username = null;
         puntajeActual = 0;
         cantidadPreguntasCorrectas = 0;
     }
 
-    public int RetornoPuntajeActual()
+    public static int RetornoPuntajeActual()
     {
         int puntos = puntajeActual;
         return puntos;
     }
-    private List<Categoria> ObtenerCategorias()
+    public static List<Categoria> ObtenerCategorias()
     {
         return BD.ObtenerCategorias();
     }
 
-    private List<Dificultad> ObtenerDificultades()
+    public static List<Dificultad> ObtenerDificultades()
     {
         return  BD.ObtenerDificultad();
     }
 
-    public void CargarUsuario(string Username, string Foto)
+    public static void CargarUsuario(string Username, string Foto)
     {
         username = Username;
         foto = Foto;
     }
-    public void CargarDificultad(int Dificultad)
+    public static void CargarDificultad(int Dificultad)
     {
         dificultad = Dificultad;
     }
-    public void CargarPartida(int categoria)
+    public static void CargarPartida(int categoria)
     {
         preguntas = BD.ObtenerPreguntas(dificultad, categoria);
-        if (preguntas.Count > 0)
+        if (preguntas.Count() > 0)
         {
             Respuesta = BD.ObtenerRespuestas(preguntas);
         }
     }
 
-    public string RetornoUsername()
+    public static string RetornoUsername()
     {
         string Usuario = username;
         return Usuario;
     }
 
-     public string RetornoFoto()
+     public static string RetornoFoto()
     {
         string FotoUsuario = foto;
         return FotoUsuario;
     }
 
-    public Pregunta ObtenerProximaPregunta()
+    public static Pregunta ObtenerProximaPregunta()
     {
         Pregunta PreguntaAzar;
         Random rnd = new Random();
-        if(preguntas.Count > 1)
+        if(preguntas.Count() > 1)
         {
             int posAzar = rnd.Next(preguntas.Count());  
             PreguntaAzar = preguntas[posAzar];
@@ -77,20 +77,26 @@ public class Juego
         return PreguntaAzar;
     }
 
-    public List<Respuesta> ObtenerProximasRespuestas(int idPregunta)
+    public static List<Respuesta> ObtenerProximasRespuestas(int idPregunta)
     {
-        List<Respuesta> RespuestasPosibles = new List<Respuesta>();  
-        RespuestasPosibles.Add(Respuesta[idPregunta]);
+        List<Respuesta> RespuestasPosibles = new List<Respuesta>(); 
+
+        foreach (Respuesta a in Respuesta)
+        { 
+            if(a.IdPregunta == idPregunta){
+                RespuestasPosibles.Add(a);
+            }
+        }
         return RespuestasPosibles;
     }
 
-    public bool VerificarRespuesta(int idPregunta, int idRespuesta)
+    public static bool VerificarRespuesta(int idPregunta, int idRespuesta)
     {
-        int posPregunta = preguntas.IndexOf(idPregunta);
-        int posRespuesta = Respuesta.IndexOf(idRespuesta);
+        int posPregunta = preguntas.FindIndex(p => p.IdPregunta == idPregunta);
+        int posRespuesta = Respuesta.FindIndex(r => r.IdRespuesta == idRespuesta);
         if(preguntas[posPregunta].IdPregunta == Respuesta[posPregunta].IdPregunta && Respuesta[posRespuesta].Correcta == true)
         {
-            switch (Dificultad.IdDificultad)
+            switch (dificultad)
             {
                 case 1:
                     puntajeActual++;
@@ -110,17 +116,18 @@ public class Juego
         }
     }
 
-    public string RespuestaCorrecta (int idPregunta, int idRespuesta)
+    public static string RespuestaCorrecta (int idPregunta, int idRespuesta)
     {
+        string correcta = null;
         if(!VerificarRespuesta(idPregunta, idRespuesta))
         {
-            int posPregunta = preguntas.IndexOf(idPregunta);
-            string correcta = Respuesta[posPregunta].Contenido;
+            int posPregunta = preguntas.FindIndex(p => p.IdPregunta == idPregunta);
+            correcta = Respuesta[posPregunta].Contenido;
         }
         return correcta;
     }
 
-    public void EliminarId ()
+    public static void EliminarId (int idPregunta, int idRespuesta)
     {
         preguntas.RemoveAt(idPregunta);
         preguntas.RemoveAt(idRespuesta);

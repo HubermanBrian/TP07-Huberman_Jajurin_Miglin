@@ -1,6 +1,6 @@
 public class Respuesta{
     public int IdRespuesta;
-    public int IdCategoria;
+    public int IdPregunta;
     public int Opcion;
     public string Contenido;
     public bool Correcta;
