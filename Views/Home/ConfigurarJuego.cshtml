@@ -1,23 +1,38 @@
-<form action = '@Url.Action("InicioSesion")' class="row g-3">
-     <div class="col-md-6">
-            <label class="form-label"></label>
-            <input type="text" class="form-control" name="username" placeholder= "username" autocomplete = "off" required>
-        </div>
-        <div class="col-md-6">
-            <label class="form-label"></label>
-            <input type="text" class="form-control" name="foto" placeholder= "foto" autocomplete = "off" required>
-        </div>
-    <div class="col-md-4">
-        <label  class="form-label"></label>
-        <select class="form-select" name="IdDificultad">
-            <option value="">Eliga su dificultad</option>
-            @foreach (Dificultad dificultad in ViewBag.Dificultad)
-            {
-                <option value="@dificultad.IdDificultad">@dificultad.Nombre</option>
-            }
-        </select>
+<body>
+    <!-- Contenedor del fondo -->
+    <div class="background-image-container">
+        <img src="~/IMG/Configuracion.cshtml.png" alt="Background Image" class="background-image">
     </div>
-    <div class="col-12 mt-5 d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary">Enviar</button>
+
+    <div class="form-container" >
+        <h1 class="form-title">Configuracion del Juego</h1>
+        <form action='@Url.Action("InicioSesion")'>
+            <!-- Campo para elegir el nombre de usuario -->
+            <div class="form-group">
+                <label for="username">Nombre de Usuario</label>
+                <input type="text" id="username" name="username" class="form-control" placeholder="Ingresa tu nombre de usuario">
+            </div>
+
+            <!-- Campo para subir una foto -->
+            <div class="form-group">
+                <label for="photo">Sube tu Foto</label>
+                <input type="text" id="photo" name="foto" class="form-control">
+            </div>
+
+            <!-- Campo para elegir la dificultad -->
+            <div class="form-group">
+                <label for="difficulty">Elige la Dificultad</label>
+                 <select class="form-control" name="IdDificultad">
+                @foreach (Dificultad dificultad in ViewBag.Dificultad)
+                {
+                    <option value="@dificultad.IdDificultad">@dificultad.Nombre</option>
+                }
+                </select>
+            </div>
+            <!-- Botón para enviar -->
+            <button type="submit" class="submit-button">Enviar</button>
+        </form>
     </div>
-</form>
+
+    <script src="script.js"></script>
+</body>
