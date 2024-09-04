@@ -1,0 +1,434 @@
+@font-face {
+    font-family: 'MikadoBold';
+    src: url('MikadoBold_DEMO.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100%;
+    font-family: 'MikadoBold', 'Arial', sans-serif;
+ 
+}
+
+a{
+    text-decoration: none;
+    color: white    ;
+}
+
+.background-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cambia este valor para ajustar el brillo */
+    z-index: -1;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    z-index: 1; /* Asegura que el contenido esté por encima del video */
+}
+
+.icons-container {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Estilos de los íconos del menú y usuario */
+.menu-icon, .user-icon {
+    cursor: pointer;
+    margin: 20px;
+}
+
+.title {
+    font-size: 5rem;
+    animation: pulseAnimation 2s infinite;
+    margin-bottom: 20px;
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8),
+        0 0 10px rgba(255, 255, 255, 0.5), 
+        0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes pulseAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.settings-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.config-button { 
+    background-color: transparent;
+    border: 2px solid rgb(248, 248, 248);
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 100px;
+    
+}
+
+.config-button:hover {
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+/* CONFIGURACION*/
+.background-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 90%;
+    max-width: 500px;
+    margin-left: 15%;
+}
+
+.form-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: #333;
+    color: white;
+}
+
+.form-control[type="file"] {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.submit-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #2980b9;
+}
+
+
+
+/* Información del usuario (nombre y puntos) */
+.user-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-family: 'MikadoBold', 'Arial', sans-serif;
+}
+
+.username {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.points {
+    background-color: #FFC107;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+/* Contenedor del juego (pregunta y opciones) */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.question-container {
+    margin-bottom: 30px;
+}
+
+.question {
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 700%;
+    border: 5px solid #9c27b0;
+    border-radius: 20px;
+    align-items: center;
+    margin-right: -300%;
+    margin-left: -300%;
+}
+
+/* Opciones del formulario */
+.options-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option-button {
+    border-radius: 25px;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 500%;
+}
+
+.option-button:hover {
+    background-color: #9c27b0;
+}
+
+/* RESP INCORRECTA */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    padding-top: 13%; /* Baja todo el contenido un poco */
+}
+
+.incorrect-title {
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+.correct-title{
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    animation: dyner 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
+    }
+    100% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000;
+    }
+}
+
+@keyframes dyner {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #00b61e, 0 0 30px #00b61e, 0 0 40px #00b61e, 0 0 50px #00b61e, 0 0 60px #00b61e, 0 0 70px #00b61e;
+    }
+    100% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #00b61e, 0 0 40px #00b61e, 0 0 50px #00b61e, 0 0 60px #00b61e, 0 0 70px #00b61e, 0 0 80px #00b61e;
+    }
+}
+
+.correct-answer-container {
+    margin-bottom: 40px;
+}
+
+.correct-answer-button {
+  
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.next-button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.next-button {
+    background-color: #000000;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.next-button:hover {
+    background-color: #4b0ebd;
+}
+
+.mascot-container {
+    position: absolute;
+    bottom: -80px;
+    width: 100px;
+    height: auto;
+    
+}
+
+.mascot-image {
+    width: 100px;
+    height: auto;
+    
+}
+
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CREDITOS */
+.credits-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 2;
+}
+
+.user-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    animation: spin 5s linear infinite;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.username {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.user-info
+{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.points {
+    font-size: 1.5rem;
+    background-color: rgba(255, 193, 7, 0.8); /* Fondo amarillo translúcido */
+    color: black;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
