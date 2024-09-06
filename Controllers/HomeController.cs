@@ -44,8 +44,6 @@ public class HomeController : Controller
     public IActionResult InicioSesion(string username, string foto, int dificultad)
     {
         Juego.CargarUsuario(username,foto);
-        ViewBag.Username = Juego.RetornoUsername();
-        ViewBag.Foto = Juego.RetornoFoto();
         Juego.CargarDificultad(dificultad);
         ViewBag.Categoria = Juego.ObtenerCategorias();
         return View ("Ruleta");
@@ -64,8 +62,6 @@ public class HomeController : Controller
 
     public IActionResult VerificarRespuesta(int idPregunta, int idRespuesta)
     {
-        ViewBag.Username = Juego.RetornoUsername();
-        ViewBag.Foto = Juego.RetornoFoto();
         ViewBag.Correcto = Juego.VerificarRespuesta(idPregunta,idRespuesta);
         if(ViewBag.Correcto == true)
         {

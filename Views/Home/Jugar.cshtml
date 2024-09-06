@@ -1,0 +1,31 @@
+<body>
+    <!-- Contenedor de la imagen de fondo -->
+    <div class="background-image-container">
+        <img src="Juego.cshtml.png" alt="Background Image" class="background-image">
+    </div>
+
+    <!-- Contenedor del nombre de usuario y puntos -->
+    <div class="user-info">
+        <span class="username">@ViewBag.Username</span>
+        <span class="points">@ViewBag.PuntajeActual</span>
+    </div>
+
+    <!-- Contenedor de la pregunta y opciones -->
+    <div class="game-container">
+        <div class="question-container">
+            <h1 class="question">@ViewBag.Pregunta</h1>
+        </div>
+        <form class="options-form" action='@Url.Action("VerificarRespuesta")'>
+            <label>Elige la Respuesta</label>
+                <select name="IdRespuesta">
+                @foreach (Respuesta respuesta in ViewBag.Respuestas)
+                {
+                    <option value="@respuesta.IdRespuesta"><button class="option-button" type="button">@respuesta.Contenido</button></option>
+                }
+                </select>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+ 
+</body>

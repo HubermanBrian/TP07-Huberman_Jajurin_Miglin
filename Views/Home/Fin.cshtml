@@ -1,0 +1,36 @@
+<body>
+    <div class="background-image-container">
+        <img src="Creditos.html.png" alt="Fondo" class="background-image">
+    </div>
+
+    <div class="container">
+        <div class="credits-container">
+            <!-- Espacio para la imagen del usuario -->
+            <div class="user-photo">
+                <img src="@ViewBag.Foto" alt="Foto del usuario" class="profile-pic">
+            </div>
+            <!-- Nombre de usuario -->
+            <div class="user-info">
+                <div class="username">@ViewBag.Username</div>
+                <div class="points">@ViewBag.PuntajeActual</div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script>
+        // Seleccionar la imagen del usuario
+const userPhoto = document.querySelector('.user-photo');
+
+// Función para rotar la imagen
+function rotateImage() {
+    userPhoto.style.animation = 'spin 5s linear infinite';  // '5s' es la duración de una rotación completa
+}
+
+// Iniciar la animación cuando la página se cargue
+window.onload = rotateImage;
+
+    </script>
+
+</body>

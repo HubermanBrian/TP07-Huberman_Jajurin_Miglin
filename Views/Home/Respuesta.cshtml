@@ -1,0 +1,42 @@
+<body>
+    @if(ViewBag.Correcto)
+    {
+    <div class="background-image-container">
+        <img src="Respuesta.cshtml (1).png" alt="Fondo" class="background-image-container">
+        
+        <div class="content-container">
+            <h1 class="correct-title">@ViewBag.Respuesta</h1>
+            <div class="next-button-container">
+                <form action='@Url.Action("Jugar")'>
+                        <button class="next-button">Siguiente</button>
+                </form>
+            </div>
+
+            <div class="mascot-container">
+                <img src="derrota.jfif " alt="Mascota" class="mascot-image">
+            </div>
+        </div>
+    </div>
+    }else{
+    <div class="background-image-container">
+        <img src="Respuesta.cshtml (1).png" alt="Fondo" class="background-image-container">
+        
+        <div class="content-container">
+            <h1 class="incorrect-title">@ViewBag.Respuesta</h1>
+
+            <div class="correct-answer-container">
+                <button class="correct-answer-button">@ViewBag.RespuestaCorrecta</button>
+            </div>
+
+            <div class="next-button-container">
+                <button class="next-button">Siguiente</button>
+            </div>
+
+            <div class="mascot-container">
+                <img src="derrota.jfif " alt="Mascota" class="mascot-image">
+            </div>
+        </div>
+    </div>
+    }
+   
+</body>
