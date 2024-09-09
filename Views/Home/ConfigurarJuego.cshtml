@@ -22,7 +22,7 @@
             <!-- Campo para elegir la dificultad -->
             <div class="form-group">
                 <label for="difficulty">Elige la Dificultad</label>
-                 <select class="form-control" name="IdDificultad">
+                 <select class="form-control" name="dificultad">
                 @foreach (Dificultad dificultad in ViewBag.Dificultad)
                 {
                     <option value="@dificultad.IdDificultad">@dificultad.Nombre</option>

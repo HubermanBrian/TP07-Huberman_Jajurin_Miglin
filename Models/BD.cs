@@ -27,13 +27,13 @@ public class BD
         return ListaDificultad;
     }
 
-    public static List<Pregunta> ObtenerPreguntas(int dificultad, int categoria)
+    public static List<Pregunta> ObtenerPreguntas(int dificultad, int posCategoria)
     {
-        List<Pregunta> ListaPregunta = null;
-         using (SqlConnection db = new SqlConnection(_connectionString))
+        List<Pregunta> ListaPregunta = new List<Pregunta>();  // Inicializar como una lista vacía
+        using (SqlConnection db = new SqlConnection(_connectionString))
         {
-            string sql = "SELECT * FROM Preguntas WHERE (@pdificultad = -1 0R IdDificultad = @pdificultad) AND (@pcategoria = -1 0R IdCategoria = @pcategoria)";
-            ListaPregunta = db.Query<Pregunta>(sql, new {dificultad, categoria}).ToList();
+            string sql = "SELECT * FROM Preguntas WHERE IdDificultad = @pdificultad AND IdCategoria = @pcategoria";
+            ListaPregunta = db.Query<Pregunta>(sql, new { pdificultad = dificultad, pcategoria = posCategoria }).ToList();
         }
         return ListaPregunta;
     }

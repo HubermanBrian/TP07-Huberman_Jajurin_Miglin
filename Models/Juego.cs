@@ -39,9 +39,9 @@ public static class Juego
     {
         dificultad = Dificultad;
     }
-    public static void CargarPartida(int categoria)
+    public static void CargarPartida(int posCategoria)
     {
-        preguntas = BD.ObtenerPreguntas(dificultad, categoria);
+        preguntas = BD.ObtenerPreguntas(dificultad, posCategoria);
         if (preguntas.Count() > 0)
         {
             Respuesta = BD.ObtenerRespuestas(preguntas);

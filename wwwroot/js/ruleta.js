@@ -13,7 +13,7 @@ const nombre = document.getElementById("nombreUsuario");
 const Jugar = document.getElementById("button");
 const categoriasTocada = document.getElementById("categorias");
 
-ruleta.style.visibility = "visible"; // Asegúrate de que la ruleta esté visible
+ruleta.style.visibility = "visible";
 Jugar.style.visibility = "hidden";
 
 let anguloInicial = 0;
@@ -55,14 +55,15 @@ function girarRuleta() {
     setTimeout(() => {
         const anguloFinal = rotacion % 360;
         const indiceGanador = Math.floor(numSecciones - (anguloFinal / 360) * numSecciones) % numSecciones;
-        
+    
         Jugar.style.visibility = "visible";
-
         categoriasTocada.value = categorias[indiceGanador];
-
-        document.getElementById("girarBtn").disabled = true; // Deshabilitar el botón Girar
-        canvas.style.transition = "none"; // Para permitir más giros posteriores
-        buttonClicked = false; // Restablecer el estado del botón
+        
+        console.log("Categoría seleccionada:", categoriasTocada.value);
+    
+        document.getElementById("girarBtn").disabled = true;
+        canvas.style.transition = "none";
+        buttonClicked = false;
     }, duracion * 1000);
 }
 

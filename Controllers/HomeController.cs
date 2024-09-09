@@ -53,9 +53,30 @@ public class HomeController : Controller
     {
         return View();
     }
-    public IActionResult Comenzar(int categoria)
+    public IActionResult Comenzar(string categoria)
     {   
-        Juego.CargarPartida(categoria);
+        Console.WriteLine($"Categoria: {categoria}");
+        ViewBag.Categoria = Juego.ObtenerCategorias();
+        int posCategoria;
+        switch(ViewBag.Categoria.Nombre)
+        {
+            case "Futbol Sudamericano":
+                posCategoria = 2;
+            break;
+            case "Futbol Europeo":
+                posCategoria = 1;
+            break;
+            case "Decada 2000":
+                posCategoria = 3;
+            break;
+            default:
+                posCategoria = 0;
+            break;
+        }
+        
+        Juego.CargarPartida(posCategoria);
+        Console.WriteLine(Juego.preguntas.Count);
+        
         if (Juego.preguntas.Count > 0)
         {
             return RedirectToAction ("Jugar");
