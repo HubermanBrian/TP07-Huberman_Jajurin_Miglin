@@ -64,7 +64,7 @@ public static class Juego
     {
         Pregunta PreguntaAzar;
         Random rnd = new Random();
-        if(preguntas.Count() > 1)
+        if(preguntas.Count() > 0)
         {
             int posAzar = rnd.Next(preguntas.Count());  
             PreguntaAzar = preguntas[posAzar];
@@ -77,6 +77,10 @@ public static class Juego
         return PreguntaAzar;
     }
 
+    public static int CantPreguntas(){
+        int cant = preguntas.Count();
+        return cant;
+    }
     public static List<Respuesta> ObtenerProximasRespuestas(int idPregunta)
     {
         List<Respuesta> RespuestasPosibles = new List<Respuesta>(); 
