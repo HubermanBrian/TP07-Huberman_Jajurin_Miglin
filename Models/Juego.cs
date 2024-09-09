@@ -6,7 +6,7 @@ public static class Juego
     private static int puntajeActual {get;set;}
     private static int cantidadPreguntasCorrectas{get;set;}
     public static List<Pregunta> preguntas = new List<Pregunta>();
-    public static List<Respuesta> Respuesta = new List<Respuesta>();
+    public static List<Respuesta> respuesta = new List<Respuesta>();
 
     public static void InicializarJuego()
     {
@@ -44,7 +44,7 @@ public static class Juego
         preguntas = BD.ObtenerPreguntas(dificultad, posCategoria);
         if (preguntas.Count() > 0)
         {
-            Respuesta = BD.ObtenerRespuestas(preguntas);
+            respuesta = BD.ObtenerRespuestas(preguntas);
         }
     }
 
@@ -81,7 +81,7 @@ public static class Juego
     {
         List<Respuesta> RespuestasPosibles = new List<Respuesta>(); 
 
-        foreach (Respuesta a in Respuesta)
+        foreach (Respuesta a in respuesta)
         { 
             if(a.IdPregunta == idPregunta){
                 RespuestasPosibles.Add(a);
@@ -93,8 +93,8 @@ public static class Juego
     public static bool VerificarRespuesta(int idPregunta, int idRespuesta)
     {
         int posPregunta = preguntas.FindIndex(p => p.IdPregunta == idPregunta);
-        int posRespuesta = Respuesta.FindIndex(r => r.IdRespuesta == idRespuesta);
-        if(preguntas[posPregunta].IdPregunta == Respuesta[posPregunta].IdPregunta && Respuesta[posRespuesta].Correcta == true)
+        int posRespuesta = respuesta.FindIndex(r => r.IdRespuesta == idRespuesta);
+        if(respuesta[posRespuesta].Correcta == true)
         {
             switch (dificultad)
             {
@@ -118,19 +118,28 @@ public static class Juego
 
     public static string RespuestaCorrecta (int idPregunta, int idRespuesta)
     {
-        string correcta = null;
+        string correcta = " ";
         if(!VerificarRespuesta(idPregunta, idRespuesta))
         {
-            int posPregunta = preguntas.FindIndex(p => p.IdPregunta == idPregunta);
-            correcta = Respuesta[posPregunta].Contenido;
+            List<Respuesta> RespuestasPosibles = new List<Respuesta>(); 
+            RespuestasPosibles = ObtenerProximasRespuestas(idPregunta);
+            foreach (Respuesta a in RespuestasPosibles)
+            {
+                if(a.Correcta == true)
+                {
+                    correcta = a.Contenido;
+                }
+            }
+                
         }
         return correcta;
     }
+        
+    
 
     public static void EliminarId (int idPregunta, int idRespuesta)
     {
         preguntas.RemoveAt(idPregunta);
-        preguntas.RemoveAt(idRespuesta);
     }
 
 }

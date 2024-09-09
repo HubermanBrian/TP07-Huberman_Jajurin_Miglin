@@ -25,22 +25,24 @@
     </style>
   </head>
 
-    <div class="background-image-container">
-        <img src="~/IMG/Configuracion.cshtml.png" alt="Background Image" class="background-image">
-    </div>
-    <body>
-        <div class="ruleta-container mt-3" id="ruleta">
-          <canvas id="canvas" width="500" height="500"></canvas>
-          <img src="~/img/flechita.png" class="flecha" alt="Flecha">
-          <button class="girarBtn" id="girarBtn" onclick="girarRuleta()">Girar</button>
-        </div>
     
-        <form action='@Url.Action("Comenzar")'>
-            <input type="hidden" name="categoria" id="categorias">
-            <button class="next-button" id="button">Jugar</button>
-        </form>
+    <body>
+      <div class="background-image-container">
+          <img src="~/IMG/Configuracion.cshtml.png" alt="Background Image" class="background-image">
+      </div>
+          <div class="ruleta-container mt-3" id="ruleta">
+            <canvas id="canvas" width="500" height="500"></canvas>
+            <img src="~/img/flechita.png" class="flecha" alt="Flecha">
+            <button class="girarBtn" id="girarBtn" onclick="girarRuleta()">Girar</button>
+          </div>
+      
+          <form action='@Url.Action("Comenzar")'>
+              <input type="hidden" name="categoria" id="categorias">
+              <button class="next-button" id="button">Jugar</button>
+          </form>
 
-        <script src="~/js/ruleta.js"></script>
+          <script src="~/js/ruleta.js"></script>
+      
     </body>
 </html>
 

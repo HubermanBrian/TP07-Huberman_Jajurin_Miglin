@@ -28,6 +28,7 @@ public class HomeController : Controller
     public IActionResult Jugar()
     {
         ViewBag.Pregunta = Juego.ObtenerProximaPregunta();
+        ViewBag.NombrePregunta = ViewBag.Pregunta.Enunciado;
         ViewBag.Username = Juego.RetornoUsername();
         ViewBag.Foto = Juego.RetornoFoto();
         ViewBag.PuntajeActual = Juego.RetornoPuntajeActual();
@@ -56,24 +57,17 @@ public class HomeController : Controller
     public IActionResult Comenzar(string categoria)
     {   
         Console.WriteLine($"Categoria: {categoria}");
-        ViewBag.Categoria = Juego.ObtenerCategorias();
-        int posCategoria;
-        switch(ViewBag.Categoria.Nombre)
+        List<Categoria> categorias = new List<Categoria>(); 
+        categorias = Juego.ObtenerCategorias();
+        int posCategoria = 0;
+        foreach (Categoria a in categorias)
         {
-            case "Futbol Sudamericano":
-                posCategoria = 2;
-            break;
-            case "Futbol Europeo":
-                posCategoria = 1;
-            break;
-            case "Decada 2000":
-                posCategoria = 3;
-            break;
-            default:
-                posCategoria = 0;
-            break;
+            Console.WriteLine(a.Nombre);
+            if(categoria == a.Nombre){
+                posCategoria = a.IdCategoria;
+            }
         }
-        
+        Console.WriteLine(posCategoria);
         Juego.CargarPartida(posCategoria);
         Console.WriteLine(Juego.preguntas.Count);
         

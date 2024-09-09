@@ -44,10 +44,11 @@ public class BD
         using (SqlConnection db = new SqlConnection(_connectionString))
         {
             string sql = "SELECT * FROM Respuestas";
-            foreach (Pregunta a in preguntas){
+            ListaRespuesta = db.Query<Respuesta>(sql).ToList();
+            /*foreach (Pregunta a in preguntas){
                 List<Respuesta>ListaRespuestaPorPregunta = db.Query<Respuesta>(sql, new {@id = a.IdPregunta}).ToList();
                 ListaRespuesta.AddRange(ListaRespuestaPorPregunta);
-            }
+            }*/
         }
         return ListaRespuesta;
     }
