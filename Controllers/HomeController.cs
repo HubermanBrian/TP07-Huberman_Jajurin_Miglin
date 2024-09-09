@@ -46,7 +46,12 @@ public class HomeController : Controller
         Juego.CargarUsuario(username,foto);
         Juego.CargarDificultad(dificultad);
         ViewBag.Categoria = Juego.ObtenerCategorias();
-        return View ("Ruleta");
+        return RedirectToAction ("Ruleta");
+    }
+
+    public IActionResult Ruleta()
+    {
+        return View();
     }
     public IActionResult Comenzar(int categoria)
     {   

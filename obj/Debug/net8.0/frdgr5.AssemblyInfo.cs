@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("frdgr5")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12760bc1d98cd5470e024b40b1811315f11a58f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3eef30d8f484995b06b2a10d2d10b48c287c0185")]
 [assembly: System.Reflection.AssemblyProductAttribute("frdgr5")]
 [assembly: System.Reflection.AssemblyTitleAttribute("frdgr5")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

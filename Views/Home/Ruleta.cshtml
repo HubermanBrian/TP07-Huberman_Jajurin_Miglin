@@ -4,57 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="~/js/TweenMax.min.js"></script>
-    <script src="~/js/Winwheel.min.js"></script>
-    <title>Ruleta con Librerias</title>
+    <style>
+      .ruleta-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .flecha {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .next-button {
+        margin-top: 20px;
+      }
+    </style>
   </head>
-  <body>
-    <input type="button" value="Girar" onclick="miRuleta.startAnimation();" />
-    <br /><br />
-    <canvas id="canvas" height="400" width="400"></canvas>
-  </body>
+    <body>
+        <div class="ruleta-container mt-3" id="ruleta">
+          <canvas id="canvas" width="500" height="500"></canvas>
+          <img src="~/img/flechita.png" class="flecha" alt="Flecha">
+          <button class="girarBtn" id="girarBtn" onclick="girarRuleta()">Girar</button>
+        </div>
+    
+        <form action='@Url.Action("Comenzar")'>
+            <input type="hidden" name="categoria" id="categorias">
+            <button class="next-button" id="button">Jugar</button>
+        </form>
+
+        <script src="~/js/ruleta.js"></script>
+    </body>
 </html>
 
-<script>    
-    var miRuleta = new Winwheel({
-  numSegments: 15,
-  outerRadius: 170,
-  segments: [
-    foreach(Categoria categoria in ViewBag.Categoria)
-    {
-        { fillStyle: "categoria[categoria.IdCategoria].Color", text: "categoria[categoria.IdCategoria].Nombre" }
-    }
-  ],
-  animation: {
-    type: "spinToStop",
-    duration: 5,
-    callbackFinished: "mensaje()",
-    callbackAfter: "dibujarIndicador()"
-  }
-});
-
-dibujarIndicador();
-
-function mensaje() {
-  var SegmentoSeleccionado = miRuleta.getIndicatedSegment();
-  alert("Elemento seleccionado: " + SegmentoSeleccionado.text);
-  miRuleta.stopAnimation(false);
-  miRuleta.rotationAngle = 0;
-  miRuleta.draw();
-  dibujarIndicador();
-}
-
-function dibujarIndicador() {
-  var ctx = miRuleta.ctx;
-  ctx.strokeStyle = "navy";
-  ctx.fillStyle = "black";
-  ctx.lineWidth = 2;
-  ctx.beginPath();
-  ctx.moveTo(170, 10);
-  ctx.lineTo(230, 10);
-  ctx.lineTo(200, 70);
-  ctx.lineTo(170, 10);
-  ctx.stroke();
-  ctx.fill();
-}
-</script>
