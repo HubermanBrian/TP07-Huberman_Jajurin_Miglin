@@ -1,115 +1,119 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\Configuracion.cshtml.png",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\IMG\\Configuracion.cshtml.png",
       "PackagePath": "staticwebassets\\IMG\\Configuracion.cshtml.png"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\Creditos.html.png",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\IMG\\Creditos.html.png",
       "PackagePath": "staticwebassets\\IMG\\Creditos.html.png"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\Juego.cshtml.png",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\IMG\\Juego.cshtml.png",
       "PackagePath": "staticwebassets\\IMG\\Juego.cshtml.png"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\MikadoBold_DEMO.otf",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\IMG\\MikadoBold_DEMO.otf",
       "PackagePath": "staticwebassets\\IMG\\MikadoBold_DEMO.otf"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\Preguntados - cómo empezó todo (1) (1).mp4",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\IMG\\Preguntados - cómo empezó todo (1) (1).mp4",
       "PackagePath": "staticwebassets\\IMG\\Preguntados - cómo empezó todo (1) (1).mp4"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\Respuesta.cshtml (1).png",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\IMG\\Respuesta.cshtml (1).png",
       "PackagePath": "staticwebassets\\IMG\\Respuesta.cshtml (1).png"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\derrota.png",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\IMG\\derrota.png",
       "PackagePath": "staticwebassets\\IMG\\derrota.png"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\favicon.ico",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\IMG\\favicon.ico",
       "PackagePath": "staticwebassets\\IMG\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\menu_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\IMG\\flechita.png",
+      "PackagePath": "staticwebassets\\IMG\\flechita.png"
+    },
+    {
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\IMG\\menu_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg",
       "PackagePath": "staticwebassets\\IMG\\menu_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\person_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\IMG\\person_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg",
       "PackagePath": "staticwebassets\\IMG\\person_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\preguntados-como-empezo-todo_yOWig9Vp.mp4",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\IMG\\preguntados-como-empezo-todo_yOWig9Vp.mp4",
       "PackagePath": "staticwebassets\\IMG\\preguntados-como-empezo-todo_yOWig9Vp.mp4"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\prueba imagen.jfif",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\IMG\\prueba imagen.jfif",
       "PackagePath": "staticwebassets\\IMG\\prueba imagen.jfif"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\settings_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\IMG\\settings_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg",
       "PackagePath": "staticwebassets\\IMG\\settings_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\victoria.png",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\IMG\\victoria.png",
       "PackagePath": "staticwebassets\\IMG\\victoria.png"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\css\\styles.css",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\js\\ruleta.js",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\js\\ruleta.js",
       "PackagePath": "staticwebassets\\js\\ruleta.js"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\48179712\\Desktop\\fewfwe\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

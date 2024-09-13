@@ -30,6 +30,10 @@
       <div class="background-image-container">
           <img src="~/IMG/Configuracion.cshtml.png" alt="Background Image" class="background-image">
       </div>
+      <div class="icons-container">
+            <img src="~/IMG/menu_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="Menu" class="menu-icon">
+            <img src="~/IMG/person_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="User" class="user-icon">
+      </div>
           <form action='@Url.Action("Comenzar")' style="z-index: 1; display:flex; align-items:center; justify-content:center; margin-top:5%" >
               <input type="hidden" name="categoria" id="categorias">
               <button class="jugar-button" id="button">Jugar</button>
@@ -38,7 +42,7 @@
             <canvas id="canvas" width="500" height="500"></canvas>
             <input type="button" value="Girar" onclick="girarRuleta()" id="girarBtn" class="girarBtn" style="display:none;" >
             <label for="girarBtn">
-              <img src="~/img/flechita.png" class="flecha" alt="Flecha">
+              <img src="~/img/flechita.png" class="flecha" alt="Flecha" style = "with:50px; height:50px">
             </label>
           </div>
       

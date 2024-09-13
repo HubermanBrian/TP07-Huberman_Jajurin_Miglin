@@ -360,17 +360,16 @@ a{
 }
 
 .mascot-container {
-    position: absolute;
     bottom: -80px;
     width: 200px;
     height: auto;
-    
+    margin-top: 50px;
 }
 
 .mascot-image {
     width: 200px;
     height: auto;
-    
+    margin-top: 50px;
 }
 
 
@@ -397,7 +396,8 @@ a{
     height: 370px;
     border-radius: 50%;
     overflow: hidden;
-    margin-top: 6%;
+    margin-top: 10px;
+    margin-bottom: 17%;
     margin-left: 3%;
     animation: spin 5s linear infinite;
 }
