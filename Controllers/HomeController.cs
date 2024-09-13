@@ -27,24 +27,18 @@ public class HomeController : Controller
 
     public IActionResult Jugar()
     {
-        //int cant = Juego.CantPreguntas;
-        //if(cant > 0)
-       // {
-            ViewBag.Pregunta = Juego.ObtenerProximaPregunta();
+        ViewBag.ListaPreguntas = Juego.preguntas;
+        ViewBag.Username = Juego.RetornoUsername();
+        ViewBag.Foto = Juego.RetornoFoto();
+        ViewBag.PuntajeActual = Juego.RetornoPuntajeActual();
+        if(ViewBag.ListaPreguntas.Count > 0){
+             ViewBag.Pregunta = Juego.ObtenerProximaPregunta();
             ViewBag.NombrePregunta = ViewBag.Pregunta.Enunciado;
-            ViewBag.Username = Juego.RetornoUsername();
-            ViewBag.Foto = Juego.RetornoFoto();
-            ViewBag.PuntajeActual = Juego.RetornoPuntajeActual();
-            if(ViewBag.Pregunta!= null){
-                ViewBag.Respuestas = Juego.ObtenerProximasRespuestas(ViewBag.Pregunta.IdPregunta);
-            return View();
-            }
-        else{
-            return View("Fin");
-            }
-        //}else{
-            return RedirectToAction ("Ruleta");
-        //}
+            ViewBag.Respuestas = Juego.ObtenerProximasRespuestas(ViewBag.Pregunta.IdPregunta);
+        return View();
+        }else{
+        return View("Fin");
+        }
     }
 
     public IActionResult InicioSesion(string username, string foto, int dificultad)

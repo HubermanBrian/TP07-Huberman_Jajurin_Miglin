@@ -127,7 +127,7 @@ public static class Juego
             RespuestasPosibles = ObtenerProximasRespuestas(idPregunta);
             foreach (Respuesta a in RespuestasPosibles)
             {
-                if(a.Correcta == true)
+                if(a.Correcta)
                 {
                     correcta = a.Contenido;
                 }

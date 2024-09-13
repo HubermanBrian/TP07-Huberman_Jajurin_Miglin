@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FvcViN5ZoJSflw0En8yquYrI+ZZyiLLmcwp9EVQ/CkY=",
+  "Hash": "zftjQd3GWPDvo/rzzao+6OO0oTUWAu+dMzDmTqo3+uY=",
   "Source": "frdgr5",
   "BasePath": "_content/frdgr5",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "frdgr5\\wwwroot",
       "Source": "frdgr5",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\css\\styles.css",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\css\\styles.css",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "css/styles.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\IMG\\Configuracion.cshtml.png",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\Configuracion.cshtml.png",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "IMG/Configuracion.cshtml.png",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\IMG\\Configuracion.cshtml.png"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\IMG\\Creditos.html.png",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\Creditos.html.png",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "IMG/Creditos.html.png",
       "AssetKind": "All",
@@ -74,12 +74,12 @@
       "OriginalItemSpec": "wwwroot\\IMG\\Creditos.html.png"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\IMG\\derrota.jfif",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\derrota.png",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
-      "RelativePath": "IMG/derrota.jfif",
+      "RelativePath": "IMG/derrota.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\IMG\\derrota.jfif"
+      "OriginalItemSpec": "wwwroot\\IMG\\derrota.png"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\IMG\\favicon.ico",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\favicon.ico",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "IMG/favicon.ico",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\IMG\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\IMG\\Juego.cshtml.png",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\Juego.cshtml.png",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "IMG/Juego.cshtml.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\IMG\\Juego.cshtml.png"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\IMG\\menu_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\menu_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "IMG/menu_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\IMG\\menu_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\IMG\\MikadoBold_DEMO.otf",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\MikadoBold_DEMO.otf",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "IMG/MikadoBold_DEMO.otf",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\IMG\\MikadoBold_DEMO.otf"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\IMG\\person_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\person_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "IMG/person_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\IMG\\person_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\IMG\\Preguntados - cómo empezó todo (1) (1).mp4",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\Preguntados - cómo empezó todo (1) (1).mp4",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "IMG/Preguntados - cómo empezó todo (1) (1).mp4",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\IMG\\Preguntados - cómo empezó todo (1) (1).mp4"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\IMG\\preguntados-como-empezo-todo_yOWig9Vp.mp4",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\preguntados-como-empezo-todo_yOWig9Vp.mp4",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "IMG/preguntados-como-empezo-todo_yOWig9Vp.mp4",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\IMG\\preguntados-como-empezo-todo_yOWig9Vp.mp4"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\IMG\\prueba imagen.jfif",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\prueba imagen.jfif",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "IMG/prueba imagen.jfif",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\IMG\\prueba imagen.jfif"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\IMG\\Respuesta.cshtml (1).png",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\Respuesta.cshtml (1).png",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "IMG/Respuesta.cshtml (1).png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\IMG\\Respuesta.cshtml (1).png"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\IMG\\settings_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\settings_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "IMG/settings_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg",
       "AssetKind": "All",
@@ -283,10 +283,29 @@
       "OriginalItemSpec": "wwwroot\\IMG\\settings_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\js\\ruleta.js",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\IMG\\victoria.png",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
+      "BasePath": "_content/frdgr5",
+      "RelativePath": "IMG/victoria.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\IMG\\victoria.png"
+    },
+    {
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\js\\ruleta.js",
+      "SourceId": "frdgr5",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "js/ruleta.js",
       "AssetKind": "All",
@@ -302,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\js\\ruleta.js"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -321,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -340,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -359,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -378,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -397,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -416,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -435,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -454,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -473,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -492,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -511,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "frdgr5",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\48179712\\Desktop\\htrhtr\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\48179712\\Desktop\\gfgdg\\wwwroot\\",
       "BasePath": "_content/frdgr5",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",

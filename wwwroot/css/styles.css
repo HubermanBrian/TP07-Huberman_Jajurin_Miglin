@@ -333,14 +333,19 @@ a{
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.jugar-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-.next-button-container {
+.next-button-container{
     position: absolute;
     top: 20px;
     right: 20px;
 }
 
-.next-button {
+.next-button, .jugar-button {
     background-color: #000000;
     color: white;
     padding: 15px 30px;
@@ -350,20 +355,20 @@ a{
     transition: background-color 0.3s;
 }
 
-.next-button:hover {
+.next-button:hover, .jugar-button:hover {
     background-color: #4b0ebd;
 }
 
 .mascot-container {
     position: absolute;
     bottom: -80px;
-    width: 100px;
+    width: 200px;
     height: auto;
     
 }
 
 .mascot-image {
-    width: 100px;
+    width: 200px;
     height: auto;
     
 }
@@ -388,11 +393,12 @@ a{
 }
 
 .user-photo {
-    width: 300px;
-    height: 300px;
+    width: 370px;
+    height: 370px;
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-top: 6%;
+    margin-left: 3%;
     animation: spin 5s linear infinite;
 }
 

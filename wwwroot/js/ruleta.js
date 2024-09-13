@@ -1,6 +1,6 @@
 ﻿
 let buttonClicked = false;
-const categorias = ["Futbol Sudamericano", "Futbol Europeo", "Decada 2000", "Todas las categorias"];
+const categorias = ["Futbol Sudamericano", "Futbol Europeo", "Decada 2000"];
 const colores = ["#FF6F61", "#6B5B95", "#88B04B", "#F7CAC9", "#92A8D1"];
 const numSecciones = categorias.length;
 const anguloPorSeccion = 2 * Math.PI / numSecciones;

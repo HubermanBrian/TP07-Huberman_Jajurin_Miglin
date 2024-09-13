@@ -21,10 +21,8 @@
             <form class="options-form" action='@Url.Action("VerificarRespuesta")'>
                     @foreach (Respuesta respuesta in ViewBag.Respuestas)
                     {
-                        <p>@respuesta.Contenido</p>
-                        <input type="radio" name="idRespuesta" value="@respuesta.IdRespuesta" >
+                        <button class="option-button" name="idRespuesta" value="@respuesta.IdRespuesta">@respuesta.Contenido</button>
                     }
-                    <button type="submit" class="submit-button">Enviar</button>
             </form>
         </div>
    
