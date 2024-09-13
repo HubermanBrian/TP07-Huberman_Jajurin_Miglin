@@ -1,8 +1,11 @@
+
+<style>
+    body{
+        background-image: url("../../img/Juego.cshtml.png");
+    }
+</style>
 <body>
-    <!-- Contenedor de la imagen de fondo -->
-    <div class="background-image-container">
-        <img src="Juego.cshtml.png" alt="Background Image" class="background-image">
-    </div>
+
 
     <!-- Contenedor del nombre de usuario y puntos -->
         <div class="user-info">
@@ -16,14 +19,11 @@
                 <h1 class="question">@ViewBag.NombrePregunta</h1>
             </div>
             <form class="options-form" action='@Url.Action("VerificarRespuesta")'>
-                <label>Elige la Respuesta</label>
-                    <select name="IdRespuesta">
                     @foreach (Respuesta respuesta in ViewBag.Respuestas)
                     {
-                        <option value="@respuesta.IdRespuesta"><button class="option-button" type="button">@respuesta.Contenido</button></option>
+                        <p>@respuesta.Contenido</p>
+                        <input type="radio" name="idRespuesta" value="@respuesta.IdRespuesta" >
                     }
-                    </select>
-                    
                     <button type="submit" class="submit-button">Enviar</button>
             </form>
         </div>

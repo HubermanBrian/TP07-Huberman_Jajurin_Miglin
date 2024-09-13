@@ -30,16 +30,18 @@
       <div class="background-image-container">
           <img src="~/IMG/Configuracion.cshtml.png" alt="Background Image" class="background-image">
       </div>
-          <div class="ruleta-container mt-3" id="ruleta">
-            <canvas id="canvas" width="500" height="500"></canvas>
-            <img src="~/img/flechita.png" class="flecha" alt="Flecha">
-            <button class="girarBtn" id="girarBtn" onclick="girarRuleta()">Girar</button>
-          </div>
-      
-          <form action='@Url.Action("Comenzar")'>
+          <form action='@Url.Action("Comenzar")' style="z-index: 1;">
               <input type="hidden" name="categoria" id="categorias">
               <button class="next-button" id="button">Jugar</button>
           </form>
+          <div class="ruleta-container" id="ruleta" style="position: absolute; width: 100%; height:100%;">
+            <canvas id="canvas" width="500" height="500"></canvas>
+            <input type="button" value="Girar" onclick="girarRuleta()" id="girarBtn" class="girarBtn" style="display:none;" >
+            <label for="girarBtn">
+              <img src="~/img/flechita.png" class="flecha" alt="Flecha">
+            </label>
+          </div>
+      
 
           <script src="~/js/ruleta.js"></script>
       

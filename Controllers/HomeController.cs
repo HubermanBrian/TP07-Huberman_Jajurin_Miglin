@@ -27,9 +27,9 @@ public class HomeController : Controller
 
     public IActionResult Jugar()
     {
-        int cant = Juego.CantPreguntas;
-        if(cant > 0)
-        {
+        //int cant = Juego.CantPreguntas;
+        //if(cant > 0)
+       // {
             ViewBag.Pregunta = Juego.ObtenerProximaPregunta();
             ViewBag.NombrePregunta = ViewBag.Pregunta.Enunciado;
             ViewBag.Username = Juego.RetornoUsername();
@@ -42,9 +42,9 @@ public class HomeController : Controller
         else{
             return View("Fin");
             }
-        }else{
+        //}else{
             return RedirectToAction ("Ruleta");
-        }
+        //}
     }
 
     public IActionResult InicioSesion(string username, string foto, int dificultad)

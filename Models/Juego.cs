@@ -123,8 +123,6 @@ public static class Juego
     public static string RespuestaCorrecta (int idPregunta, int idRespuesta)
     {
         string correcta = " ";
-        if(!VerificarRespuesta(idPregunta, idRespuesta))
-        {
             List<Respuesta> RespuestasPosibles = new List<Respuesta>(); 
             RespuestasPosibles = ObtenerProximasRespuestas(idPregunta);
             foreach (Respuesta a in RespuestasPosibles)
@@ -135,7 +133,6 @@ public static class Juego
                 }
             }
                 
-        }
         return correcta;
     }
         
