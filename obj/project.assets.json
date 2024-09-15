@@ -505,24 +505,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\48179712\\.nuget\\packages\\": {}
+    "C:\\Users\\HUBERMAN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\48179712\\Desktop\\fewfwe\\frdgr5.csproj",
+      "projectUniqueName": "C:\\Users\\HUBERMAN\\Downloads\\dsdfs\\frdgr5.csproj",
       "projectName": "frdgr5",
-      "projectPath": "C:\\Users\\48179712\\Desktop\\fewfwe\\frdgr5.csproj",
-      "packagesPath": "C:\\Users\\48179712\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\48179712\\Desktop\\fewfwe\\obj\\",
+      "projectPath": "C:\\Users\\HUBERMAN\\Downloads\\dsdfs\\frdgr5.csproj",
+      "packagesPath": "C:\\Users\\HUBERMAN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HUBERMAN\\Downloads\\dsdfs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\48179712\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\HUBERMAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -574,7 +576,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

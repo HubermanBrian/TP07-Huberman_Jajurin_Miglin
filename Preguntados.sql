@@ -34,8 +34,7 @@ CREATE TABLE Respuestas(
 INSERT INTO Dificultades (Nombre) VALUES 
 ('Facil'),
 ('Medio'),
-('Dificil'),
-('Todos');
+('Dificil');
 
 
 INSERT INTO Categorias(Nombre,Foto,Color) VALUES 

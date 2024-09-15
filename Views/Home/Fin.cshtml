@@ -17,6 +17,9 @@
                 <div class="username">@ViewBag.Username</div>
                 <div class="points">@ViewBag.PuntajeActual</div>
             </div>
+            <form action='@Url.Action("Ruleta")' style="display:flex; align-items:center; justify-content:center; margin-top:5%" >
+              <button class="jugar-button">Volver a Jugar</button>
+            </form>
         </div>
     </div>
 
